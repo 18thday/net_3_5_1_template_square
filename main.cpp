@@ -15,6 +15,13 @@ void square(T& value) {
     value *= value;
 }
 
+template <typename T>
+void square(std::vector<T>& values) {
+    for(T& value : values) {
+        value *= value;
+    }
+}
+
 int main() {
     int value_int = 2;
     double value_double = 3.0;
